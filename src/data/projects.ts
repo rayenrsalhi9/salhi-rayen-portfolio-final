@@ -15,7 +15,7 @@ export const projects: Project[] = [
     description:
       "Enterprise intranet with a full DMS (Office preview, audit trails), real-time chat via Pusher WebSockets, forums, blogs, articles, surveys, reminders with calendar, RBAC, and i18n. Includes an autonomous n8n AI agent with 9 HTTP tools, buffer-window memory, and per-message JWT re-auth for managing forum content via natural language.",
     tech: ["Laravel 9", "Angular 12", "n8n", "OpenRouter", "Pusher", "JWT"],
-    image: "/projects/enterprise-intranet.jpeg",
+    image: "https://res.cloudinary.com/dmztczwqb/image/upload/f_auto,q_auto/v1782400404/enterprise-intranet_fjcejz.jpg",
     url: "https://dgi-intranet.example.com",
     source: "https://github.com/rayenrsalhi9/dgi-intranet",
   },
@@ -34,7 +34,7 @@ export const projects: Project[] = [
     description:
       "AI-powered collaboration platform for teams, students and startups. Features OpenAI-driven task generation, real-time progress tracking, structured review workflows, role-based access and light/dark themes.",
     tech: ["React", "TypeScript", "Supabase", "OpenAI API", "shadcn/ui"],
-    image: "/projects/project-room.png",
+    image: "https://res.cloudinary.com/dmztczwqb/image/upload/f_auto,q_auto/v1782400404/project-room_qlkc1b.png",
     url: "https://projectroom.example.com",
     source: "https://github.com/rayenrsalhi9/projectroom",
   },
@@ -44,7 +44,7 @@ export const projects: Project[] = [
     description:
       "AI-powered podcast recommendation chatbot combining GPT for natural conversations with Supabase pgvector for semantic search — built around vector embeddings and an AI-driven recommendation pipeline.",
     tech: ["React 19", "LangChain.js", "Supabase pgvector", "OpenAI", "Ollama"],
-    image: "/projects/cast-gpt.png",
+    image: "https://res.cloudinary.com/dmztczwqb/image/upload/f_auto,q_auto/v1782400405/cast-gpt_trjp0v.png",
     source: "https://github.com/rayenrsalhi9/castgpt",
   },
 ];

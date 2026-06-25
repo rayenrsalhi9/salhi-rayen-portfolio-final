@@ -7,8 +7,9 @@ yarn-error.log*
 pnpm-debug.log*
 lerna-debug.log*
 
+.env
+
 node_modules
-doodle-icons
 dist
 dist-ssr
 .output
@@ -20,6 +21,9 @@ dist-ssr
 # Wrangler / Cloudflare
 .wrangler/
 .dev.vars
+
+# Netlify
+.netlify/
 
 # Editor directories and files
 .vscode/*

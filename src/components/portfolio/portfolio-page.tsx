@@ -24,18 +24,13 @@ import { experiences } from "@/data/experiences";
 import { education } from "@/data/education";
 import { certifications, INITIAL_VISIBLE } from "@/data/certifications";
 import { projects } from "@/data/projects";
-import profileSrc from "@/assets/rayen-profile-pic.png";
-import heroSrc from "@/assets/rayen-salhi-portfolio-hero-image.png";
-import ttLogoSrc from "@/assets/LOGO_TT_.jpg";
-import arabsoftLogoSrc from "@/assets/arabsoft-logo.jpeg";
-import isetkefLogoSrc from "@/assets/isetkef-logo.jpg";
-import lyceeLogoSrc from "@/assets/lycee-hedi-khfacha-monastir-logo.jpg";
+const CLOUD_BASE = "https://res.cloudinary.com/dmztczwqb/image/upload/f_auto,q_auto";
 
 const initialLogos: Record<string, string> = {
-  TT: ttLogoSrc,
-  AS: arabsoftLogoSrc,
-  IK: isetkefLogoSrc,
-  HK: lyceeLogoSrc,
+  TT: `${CLOUD_BASE}/v1782400432/LOGO_TT__cintex.jpg`,
+  AS: `${CLOUD_BASE}/v1782400431/arabsoft-logo_ajxgfd.jpg`,
+  IK: `${CLOUD_BASE}/v1782400431/isetkef-logo_uqlwad.jpg`,
+  HK: `${CLOUD_BASE}/v1782400434/lycee-hedi-khfacha-monastir-logo_oxt11q.jpg`,
 };
 
 export function PortfolioPage() {
@@ -123,7 +118,7 @@ export function PortfolioPage() {
                     animate={floatingAnimation}
                     transition={floatingTransition}
                   >
-                    <img src={profileSrc} alt="Rayen Salhi" className="size-full object-cover" />
+                    <img src={`${CLOUD_BASE}/v1782400443/rayen-profile-pic_i2no7x.png`} alt="Rayen Salhi" className="size-full object-cover" />
                   </motion.div>
                 </div>
               </div>
@@ -144,7 +139,7 @@ export function PortfolioPage() {
             </p>
             <div className="overflow-hidden rounded-xl border shadow-lg">
               <img
-                src={heroSrc}
+                src={`${CLOUD_BASE}/v1782400442/rayen-salhi-portfolio-hero-image_l7njhh.png`}
                 alt="Rayen Salhi workspace"
                 className="h-48 w-full object-cover sm:h-64"
               />
@@ -261,7 +256,7 @@ export function PortfolioPage() {
                 <span className="flex items-center gap-2 rounded-xl border bg-background border-border ring-2 ring-border/20 h-8 w-fit px-4 text-sm font-medium text-foreground">
                   {skillLogos[s] && (
                     <img
-                      src={`https://raw.githubusercontent.com/ln-dev7/logos-apps/master/logos/${skillLogos[s]}.svg`}
+                      src={`${LOGO_BASE}/${skillLogos[s]}.svg`}
                       alt=""
                       className="size-4 shrink-0"
                     />

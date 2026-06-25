@@ -1,7 +1,6 @@
 import { motion } from "motion/react";
 import { ExternalLink } from "lucide-react";
-
-const LOGO_BASE = "https://raw.githubusercontent.com/ln-dev7/logos-apps/master/logos";
+import { LOGO_BASE } from "@/data/constants";
 
 const issuerLogos: Record<string, string> = {
   Scrimba: "scrimba",
