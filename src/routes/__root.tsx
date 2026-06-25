@@ -131,6 +131,37 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
           "https://res.cloudinary.com/dmztczwqb/image/upload/f_auto,q_auto/v1782403590/rayen-salhi-portfolio-hero-image_cxqxco.jpg",
       },
     ],
+    scripts: [
+      {
+        type: "application/ld+json",
+        innerHTML: JSON.stringify({
+          "@context": "https://schema.org",
+          "@type": "Person",
+          name: "Rayen Salhi",
+          givenName: "Rayen",
+          familyName: "Salhi",
+          jobTitle: "Full-Stack Developer",
+          description:
+            "Full-Stack Developer specializing in React, Next.js, Node.js and PostgreSQL. I build AI-powered applications and modern web solutions.",
+          url: "https://rayen-salhii.netlify.app",
+          image:
+            "https://res.cloudinary.com/dmztczwqb/image/upload/f_auto,q_auto/v1782403590/rayen-profile-pic_ieoayw.jpg",
+          sameAs: [
+            "https://github.com/rayenrsalhi9",
+            "https://www.linkedin.com/in/rayen-salhi/",
+          ],
+          alumniOf: "ISET Kef",
+          knowsAbout: [
+            "React",
+            "Next.js",
+            "TypeScript",
+            "Node.js",
+            "PostgreSQL",
+            "Tailwind CSS",
+          ],
+        }),
+      },
+    ],
     links: [
       { rel: "icon", type: "image/x-icon", href: "/favicon.ico" },
       { rel: "icon", type: "image/png", sizes: "16x16", href: "/favicon-16x16.png" },
