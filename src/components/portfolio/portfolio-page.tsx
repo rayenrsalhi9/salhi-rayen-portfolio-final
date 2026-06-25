@@ -1,4 +1,11 @@
-import { motion, AnimatePresence, useScroll, useMotionValue, useSpring, useTransform } from "motion/react";
+import {
+  motion,
+  AnimatePresence,
+  useScroll,
+  useMotionValue,
+  useSpring,
+  useTransform,
+} from "motion/react";
 import { useRef, useState } from "react";
 import {
   Home,
@@ -52,7 +59,10 @@ export function PortfolioPage() {
     hidden: { opacity: 0 },
     visible: {
       opacity: 1,
-      transition: { staggerChildren: prefersReducedMotion ? 0 : 0.15, delayChildren: prefersReducedMotion ? 0 : 0.1 },
+      transition: {
+        staggerChildren: prefersReducedMotion ? 0 : 0.15,
+        delayChildren: prefersReducedMotion ? 0 : 0.1,
+      },
     },
   };
 
@@ -66,7 +76,9 @@ export function PortfolioPage() {
   };
 
   const floatingAnimation = prefersReducedMotion ? {} : { y: [0, -5, 0] };
-  const floatingTransition = prefersReducedMotion ? {} : { duration: 4, repeat: Infinity, ease: "easeInOut" as const };
+  const floatingTransition = prefersReducedMotion
+    ? {}
+    : { duration: 4, repeat: Infinity, ease: "easeInOut" as const };
 
   return (
     <div className="min-h-screen bg-background text-foreground">
@@ -109,8 +121,8 @@ export function PortfolioPage() {
                     </motion.h1>
                     <p className="mt-4 max-w-xl text-base text-muted-foreground leading-relaxed sm:text-lg">
                       Full-Stack Developer specializing in React, Next.js, Node.js and PostgreSQL. I
-                      love building AI-powered applications and modern web solutions that deliver real
-                      business value.
+                      love building AI-powered applications and modern web solutions that deliver
+                      real business value.
                     </p>
                   </div>
                   <motion.div
@@ -118,7 +130,11 @@ export function PortfolioPage() {
                     animate={floatingAnimation}
                     transition={floatingTransition}
                   >
-                    <img src={`${CLOUD_BASE}/v1782400443/rayen-profile-pic_i2no7x.png`} alt="Rayen Salhi" className="size-full object-cover" />
+                    <img
+                      src={`${CLOUD_BASE}/v1782403590/rayen-profile-pic_ieoayw.jpg`}
+                      alt="Rayen Salhi"
+                      className="size-full object-cover"
+                    />
                   </motion.div>
                 </div>
               </div>
@@ -131,15 +147,24 @@ export function PortfolioPage() {
           <h2 className="text-xl font-bold">About</h2>
           <div className="mt-3 flex flex-col gap-6">
             <p className="text-sm text-muted-foreground leading-relaxed">
-              I'm a <strong className="underline text-foreground">Full-Stack Developer</strong> based in Monastir, Tunisia, a recent
-              <strong className="underline text-foreground"> graduate in Information Technologies from ISET Kef</strong>. I love crafting <strong className="underline text-foreground">AI-powered</strong>
-              experiences and shipping <strong className="underline text-foreground">production-grade web apps</strong> — from food-delivery platforms and
-              collaboration tools to <strong className="underline text-foreground">enterprise intranets with autonomous LLM agents</strong> built on <strong className="underline text-foreground">n8n
-              and OpenRouter</strong>.
+              I'm a <strong className="underline text-foreground">Full-Stack Developer</strong>{" "}
+              based in Monastir, Tunisia, a recent
+              <strong className="underline text-foreground">
+                {" "}
+                graduate in Information Technologies from ISET Kef
+              </strong>
+              . I love crafting <strong className="underline text-foreground">AI-powered</strong>
+              experiences and shipping{" "}
+              <strong className="underline text-foreground">production-grade web apps</strong> —
+              from food-delivery platforms and collaboration tools to{" "}
+              <strong className="underline text-foreground">
+                enterprise intranets with autonomous LLM agents
+              </strong>{" "}
+              built on <strong className="underline text-foreground">n8n and OpenRouter</strong>.
             </p>
             <div className="overflow-hidden rounded-xl border shadow-lg">
               <img
-                src={`${CLOUD_BASE}/v1782400442/rayen-salhi-portfolio-hero-image_l7njhh.png`}
+                src={`${CLOUD_BASE}/v1782403590/rayen-salhi-portfolio-hero-image_cxqxco.jpg`}
                 alt="Rayen Salhi workspace"
                 className="h-48 w-full object-cover sm:h-64"
               />
@@ -178,7 +203,10 @@ export function PortfolioPage() {
                 <div className="ml-[3.25rem]">
                   <ul className="space-y-1.5">
                     {e.highlights.map((h, j) => (
-                      <li key={j} className="text-xs text-muted-foreground sm:text-sm leading-relaxed flex gap-2">
+                      <li
+                        key={j}
+                        className="text-xs text-muted-foreground sm:text-sm leading-relaxed flex gap-2"
+                      >
                         <span className="mt-1.5 block size-1 shrink-0 rounded-full bg-muted-foreground/40" />
                         {h}
                       </li>
@@ -374,7 +402,13 @@ export function PortfolioPage() {
                   exit={{ opacity: 0, y: -20, scale: 0.95 }}
                   transition={{ duration: 0.35, ease: [0.22, 1, 0.36, 1] }}
                 >
-                  <CertificateCard name={c.name} issuer={c.issuer} file={c.file} tech={c.tech} description={c.description} />
+                  <CertificateCard
+                    name={c.name}
+                    issuer={c.issuer}
+                    file={c.file}
+                    tech={c.tech}
+                    description={c.description}
+                  />
                 </motion.div>
               ))}
             </AnimatePresence>

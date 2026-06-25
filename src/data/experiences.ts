@@ -23,7 +23,16 @@ export const experiences: Experience[] = [
       "Designed and integrated an AI-powered forum assistant using n8n, OpenRouter, and Large Language Models, enabling users to create, manage, and moderate forum content through natural language conversations.",
       "Participated in backend API development, frontend feature implementation, system integration, testing, and debugging.",
     ],
-    techStack: ["Laravel", "Angular", "PostgreSQL", "JWT", "WebSockets", "n8n", "OpenRouter", "REST APIs"],
+    techStack: [
+      "Laravel",
+      "Angular",
+      "PostgreSQL",
+      "JWT",
+      "WebSockets",
+      "n8n",
+      "OpenRouter",
+      "REST APIs",
+    ],
   },
   {
     company: "Tunisie Telecom",

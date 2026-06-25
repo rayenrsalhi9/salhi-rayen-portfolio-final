@@ -43,11 +43,7 @@ export function CertificateCard({ name, issuer, file, tech, description }: Certi
         <p className="text-xs text-muted-foreground leading-relaxed line-clamp-2">{description}</p>
         {tech && (
           <div className="mt-auto flex items-center gap-2">
-            <img
-              src={`${LOGO_BASE}/${tech}.svg`}
-              alt=""
-              className="size-4 shrink-0"
-            />
+            <img src={`${LOGO_BASE}/${tech}.svg`} alt="" className="size-4 shrink-0" />
           </div>
         )}
       </div>
