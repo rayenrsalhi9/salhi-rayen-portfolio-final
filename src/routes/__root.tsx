@@ -111,7 +111,25 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
         content: "Full-Stack Developer specializing in React, Next.js, Node.js and PostgreSQL.",
       },
       { property: "og:type", content: "website" },
-      { name: "twitter:card", content: "summary" },
+      {
+        property: "og:image",
+        content:
+          "https://res.cloudinary.com/dmztczwqb/image/upload/f_auto,q_auto/v1782403590/rayen-salhi-portfolio-hero-image_cxqxco.jpg",
+      },
+      {
+        property: "og:image:width",
+        content: "1200",
+      },
+      {
+        property: "og:image:height",
+        content: "630",
+      },
+      { name: "twitter:card", content: "summary_large_image" },
+      {
+        name: "twitter:image",
+        content:
+          "https://res.cloudinary.com/dmztczwqb/image/upload/f_auto,q_auto/v1782403590/rayen-salhi-portfolio-hero-image_cxqxco.jpg",
+      },
     ],
     links: [
       { rel: "icon", type: "image/x-icon", href: "/favicon.ico" },
