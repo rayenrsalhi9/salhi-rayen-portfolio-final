@@ -17,7 +17,10 @@ self.addEventListener("fetch", (event) => {
   event.respondWith(
     fetch(event.request)
       .then((res) => {
-        const cache = res.ok && res.status < 400 ? caches.open(CACHE).then((c) => c.put(event.request, res.clone())) : Promise.resolve();
+        const cacheRes = res.ok && res.status < 400 ? res.clone() : null;
+        if (cacheRes) {
+          event.waitUntil(caches.open(CACHE).then((c) => c.put(event.request, cacheRes)));
+        }
         return res;
       })
       .catch(() => caches.match(event.request))
